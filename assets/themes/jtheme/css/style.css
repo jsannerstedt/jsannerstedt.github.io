@@ -1,3 +1,13 @@
+a.post-link {
+    color: inherit;
+    display: block;
+}
+
+a.post-link:hover {
+    text-decoration: none;
+    outline: 1px solid black;
+}
+
 /* Custom container */
 .container-narrow {
   margin: 0 auto;

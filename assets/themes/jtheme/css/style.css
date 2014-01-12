@@ -1,11 +1,16 @@
 a.post-link {
     color: inherit;
     display: block;
+    padding: 8px;
 }
 
 a.post-link:hover {
     text-decoration: none;
-    outline: 1px solid black;
+    background-color: #ddd;
+}
+
+a.post-link + a.post-link {
+    margin-top: 32px;
 }
 
 /* Custom container */

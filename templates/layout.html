@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>{% block title %}My Site{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="{{ description }}"> {% block head %} {% endblock %}
+    <link rel="stylesheet" href="/public/style/main.css" />
+</head>
+
+<body>
+    <div class="container main">
+        {% block content %} {% endblock %}
+    </div>
+    <footer>
+        <div class="container">
+            <nav class="sitemap">
+                <a href="/">Home</a>
+                <a href="/archive/1">Archive</a>
+                {% for item in collections.nav %}
+                <a href="/{{ item.path }}">{{ item.title }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

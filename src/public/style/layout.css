@@ -1,0 +1,26 @@
+body {
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}
+
+nav.sitemap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.sitemap a {
+    text-decoration: none;
+    color: grey;
+    font-size: 2rem;
+    font-weight: 100;
+}
+.sitemap a:not(:last-child) {    
+    margin-right: 30px;
+}

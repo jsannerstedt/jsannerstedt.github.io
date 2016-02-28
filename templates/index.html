@@ -1,0 +1,15 @@
+{% extends 'layout.html' %} 
+{% block content %}
+<div class="row">
+    <h1 class="blog-name">
+        {{ title }}
+        <span class="subtitle">{{ subtitle }}</span>
+    </h1>
+</div>
+<div class="row">
+    {% for post in collections.posts %} 
+    {% include "./partials/excerpt.html" %} 
+    {% endfor %} 
+    {{ contents|safe }}
+</div>
+{% endblock %}

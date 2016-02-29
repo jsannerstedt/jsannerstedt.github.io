@@ -4,10 +4,13 @@
   "scripts": {
     "build": "node index.js",
     "build:css": "cat src/public/style/normalize.css src/public/style/post.css src/public/style/layout.css > public/style/main.css",
+    "postbuild:css": "postcss --use autoprefixer --use cssnano -r public/style/main.css",
     "client-server": "light-server -s . -p 1337 -w 'index.html' -w 'src/**, templates/** # npm run build' -w 'src/public/style/**/*.css # npm run build:css # reloadcss'",
     "watch": "npm run client-server"
   },
   "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "cssnano": "^3.5.2",
     "light-server": "^1.1.5",
     "metalsmith": "^1.0.0",
     "metalsmith-branch": "0.0.4",
@@ -19,6 +22,7 @@
     "metalsmith-serve": "0.0.3",
     "metalsmith-templates": "^0.6.1",
     "metalsmith-watch": "^1.0.1",
+    "postcss-cli": "^2.5.1",
     "swig": "^1.4.2"
   }
 }

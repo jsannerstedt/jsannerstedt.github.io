@@ -1,12 +1,13 @@
 body {
     background-color: #fdfdfd;
+    color: #353535;
     display: flex;
     flex-direction: column;
 }
 
 main {
     flex: 1;
-    max-width: 960px;
+    max-width: 800px;
     width: auto;
     padding: 0 10px;
 }
@@ -20,15 +21,18 @@ main {
 @media (min-width: 700px) {
     main {
         margin: 0 auto;
-
         min-width: 660px;
     }
 }
 
 @media (min-width: 1000px) {
-    main {
-        min-width: 960px;
+    body {
+        font-size: 18px;
     }
+}
+
+p {
+    font-size: 1.2em;
 }
 
 nav.sitemap {

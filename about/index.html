@@ -1,24 +1,36 @@
 <html>
 
 <head>
-    <title>{% block title %}My Site{% endblock %}</title>
+    <title>My Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="{{ description }}"> {% block head %} {% endblock %}
+    <meta name="description" content="">  
     <link rel="stylesheet" href="/public/style/main.css" />
 </head>
 
 <body>
     <main>
-        {% block content %} {% endblock %}
+        
+<article>
+    <h1>
+        About
+    </h1>
+
+    <p>Linked in</p>
+<p>tretton37</p>
+<p>what else?</p>
+<p>random stuff</p>
+
+</article>
+
     </main>
     <footer>
         <div class="container">
             <nav class="sitemap">
                 <a href="/">Home</a>
                 <a href="/archive/1">Archive</a>
-                {% for item in collections.nav %}
-                <a href="/{{ item.path }}">{{ item.title }}</a>
-                {% endfor %}
+                
+                <a href="/./about">About</a>
+                
             </nav>
         </div>
     </footer>

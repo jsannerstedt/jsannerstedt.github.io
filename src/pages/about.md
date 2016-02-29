@@ -1,12 +1,12 @@
 ---
 title: About
 collection: nav
-template: article.html
+template: about.html
 ---
 
 Linked in
 
-tretton 37
+tretton37
 
 what else?
 

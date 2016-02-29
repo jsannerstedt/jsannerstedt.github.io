@@ -4,10 +4,8 @@ collection: nav
 template: about.html
 ---
 
-Linked in
+[LinkedIn](https://www.linkedin.com/in/joelsannerstedt)
 
-tretton37
+[Github](https://github.com/jsannerstedt)
 
-what else?
-
-random stuff
+[tretton37](http://tretton37.com/meet/joel-sannerstedt)

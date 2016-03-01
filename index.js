@@ -6,9 +6,11 @@ var collections = require('metalsmith-collections');
 var branch = require('metalsmith-branch');
 var excerpts = require('metalsmith-excerpts');
 var paginate = require('metalsmith-pagination');
+var drafts = require('metalsmith-drafts');
 
 Metalsmith(__dirname)
     .clean(false)
+    .use(drafts())
     .use(collections({
         posts: {
             pattern: 'posts/**/*.md',

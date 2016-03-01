@@ -5,6 +5,11 @@ body {
     flex-direction: column;
 }
 
+h1, h2, h3, h4, h5, h6, nav a {
+    font-family: 'Fira Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
 main {
     flex: 1;
     max-width: 800px;

@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>My Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    
+<script src="/public/scripts/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<link href="/style/github.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/public/style/main.css"/>
+</head>
+
+<body>
+<main>
+    
+<article class="post">
+    <h1>
+        A knockout component loader
+        
+        <span class="date">2016-03-04</span>
+        
+    </h1>
+
+    <p>Recently, I had a reason to dust of some old knockout extensions I made a while back. At my current assignment a couple of applications are using knockoutjs for client side stuff. I wrote this custom component loader to be avoid having to pre register any components using the knockout component binding. </p>
+<p>It relies on naming conventions for fetching the view model and template using requirejs. This also removes the need to explicitly declare a template and viewmodel in the component module. For a more detailed description, check out <a href="https://github.com/jsannerstedt/componentLoader">https://github.com/jsannerstedt/componentLoader</a></p>
+
+</article>
+
+</main>
+<footer>
+    <nav class="sitemap">
+        <a href="/">Home</a>
+        <a href="/archive/1">Archive</a>
+        
+        <a href="/./about">About</a>
+        
+    </nav>
+</footer>
+</body>
+
+</html>

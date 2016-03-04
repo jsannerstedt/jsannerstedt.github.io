@@ -1,5 +1,4 @@
 ---
-title: Codez and stuff
-subtitle: oh yeah
+title: jsannerstedt.github.io
 template: index.html
 ---
